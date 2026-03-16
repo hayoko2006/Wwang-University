@@ -7,12 +7,10 @@ import DiplomaWrapper from "./components/diplomaWrapper";
 export const generateMetadata = (_props: {}, parent: ResolvingMetadata) =>
   buildMetadata(
     {
-      title: "Diploma",
+      title: "毕业证书",
       keywords: [
-        "Wild Chicken Diploma",
-        "Wild Chicken Certificate",
-        "野鸡大学文凭",
-        "野鸡大学毕业证",
+        "神圣大旺帝国旺学文凭",
+        "旺学毕业证",
       ],
     },
     parent,
@@ -24,7 +22,7 @@ export default function Diploma() {
       <div className="w-full max-w-2xl">
         <Breadcrumb />
         <h1 className="text-2xl font-bold my-1">
-          Wild Chicken University Diploma
+          神圣大旺帝国旺学毕业证书
         </h1>
         <div className="mdx-layout font-sm mb-8">
           <DiplomaText />

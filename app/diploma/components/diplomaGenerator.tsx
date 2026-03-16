@@ -35,9 +35,9 @@ const generateDiploma = async ({
     pdfVersion: "1.7",
     compress: true,
     info: {
-      Title: "Diploma",
-      Author: "Wild Chicken University",
-      Subject: "Diploma",
+      Title: "毕业证书",
+      Author: "神圣大旺帝国旺学",
+      Subject: "毕业证书",
     },
     ownerPassword: `${uuidv4()}`,
     permissions: {
@@ -90,7 +90,7 @@ const generateDiploma = async ({
   doc.moveDown(0.5);
 
   doc.fontSize(50);
-  doc.font("chomsky").text("Wild Chicken University", {
+  doc.font("chomsky").text("神圣大旺帝国旺学", {
     align: "center",
   });
   doc.fontSize(12);
@@ -99,7 +99,7 @@ const generateDiploma = async ({
   doc.font("Times-Roman").text("ON THE NOMINATION OF THE FACULTY OF THE", {
     align: "center",
   });
-  doc.font("Times-Roman").text("WILD CHICKEN UNIVERSITY", {
+  doc.font("Times-Roman").text("神圣大旺帝国旺学", {
     align: "center",
   });
   doc.moveDown(0.2);
@@ -180,7 +180,7 @@ const generateDiploma = async ({
   doc.end();
   stream.on("finish", () => {
     const blob = stream.toBlob("application/pdf");
-    downloadPDF(blob, `WCU_Diploma_${username.split(" ").join("_")}.pdf`);
+    downloadPDF(blob, `旺学毕业证书_${username.split(" ").join("_")}.pdf`);
   });
 };
 

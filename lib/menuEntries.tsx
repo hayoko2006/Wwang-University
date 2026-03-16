@@ -1,9 +1,9 @@
 export const navbarPaths: Record<string, string> = {
-  Admission: "/admission",
-  Diploma: "/diploma",
-  Achievements: "/pages/achievements",
-  Review: "/review",
-  Alumni: "/pages/alumni",
-  About: "/pages/about",
-  Disclaimer: "/pages/disclaimer",
+  "录取": "/admission",
+  "毕业证书": "/diploma",
+  "成就": "/pages/achievements",
+  "评价": "/review",
+  "校友": "/pages/alumni",
+  "关于我们": "/pages/about",
+  "免责声明": "/pages/disclaimer",
 };

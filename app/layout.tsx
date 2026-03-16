@@ -18,29 +18,25 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Wild Chicken University",
-    template: "%s | Wild Chicken University",
+    default: "神圣大旺帝国旺学",
+    template: "%s | 神圣大旺帝国旺学",
   },
-  description: "Possible things made impossible",
+  description: "让不可能变为可能",
   keywords: [
-    "wcu",
-    "wild chicken university",
-    "Wild Chicken",
-    "野鸡大学",
-    "野雞大學",
-    "威尔德切肯大学",
-    "万尔德齐肯大学官网",
+    "神圣大旺帝国旺学",
+    "旺学",
+    "大旺帝国",
   ],
   openGraph: {
-    title: "Wild Chicken University",
-    description: "Possible things made impossible",
+    title: "神圣大旺帝国旺学",
+    description: "让不可能变为可能",
     url: "https://wcu.edu.pl",
     images: [
       {
         url: "https://wcu.edu.pl/images/opengraph.png",
         width: 1200,
         height: 630,
-        alt: "Wild Chicken University",
+        alt: "神圣大旺帝国旺学",
         type: "image/png",
       },
     ],

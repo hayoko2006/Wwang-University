@@ -10,13 +10,15 @@ export default function Footer() {
       <div className="max-w-5xl w-full mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="flex flex-col items-start">
           <span className="text-sm text-gray-500 text-left">
-            <span className="inline-block rotate-180">&copy;</span>{" "}
+            <span className="inline-block rotate-180">&copy;</span>{
+              " "
+            }
             {new Date().getFullYear()}{" "}
             <Link
               href="https://github.com/WildChickenUniversity/WildChickenUniversity"
               className="hover:underline"
             >
-              Wild Chicken University
+              神圣大旺帝国旺学
             </Link>{" "}
             by{" "}
             <Link
@@ -30,12 +32,12 @@ export default function Footer() {
               href="/pages/disclaimer#2-wild-chicken-univeristy-logo"
               className="hover:underline"
             >
-              Assets
+              资产
             </Link>{" "}
-            have their own licenses.
+            拥有各自的许可证。
           </span>
           <span className="text-xs text-gray-500 text-left">
-            Version:{" "}
+            版本:{" "}
             <Link
               className="hover:underline"
               href={`https://github.com/WildChickenUniversity/WildChickenUniversity/commit/${commit}`}
@@ -49,16 +51,16 @@ export default function Footer() {
           className="flex flex-wrap items-center justify-center text-sm gap-x-6 gap-y-2 text-gray-500"
         >
           <Link href="/pages/about" className="hover:underline">
-            About
+            关于我们
           </Link>
           <Link href="/pages/disclaimer" className="hover:underline">
-            Disclaimer
+            免责声明
           </Link>
           <Link href="/pages/privacy" className="hover:underline">
-            Privacy
+            隐私政策
           </Link>
           <Link href="/review" className="hover:underline">
-            Review
+            评价
           </Link>
           <ModeToggle />
         </nav>

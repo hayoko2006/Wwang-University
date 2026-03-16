@@ -23,9 +23,9 @@ async function createAdmissionPDF({
     pdfVersion: "1.7",
     compress: true,
     info: {
-      Title: "Admission Letter",
-      Author: "Wild Chicken University",
-      Subject: "Admission Letter",
+      Title: "录取通知书",
+      Author: "神圣大旺帝国旺学",
+      Subject: "录取通知书",
     },
     ownerPassword: `${uuidv4()}`,
     permissions: {
@@ -101,7 +101,7 @@ async function createAdmissionPDF({
     const blob = stream.toBlob("application/pdf");
     downloadPDF(
       blob,
-      `WCU_Admission_Decision_${username.split(" ").join("_")}.pdf`,
+      `旺学录取决定_${username.split(" ").join("_")}.pdf`,
     );
   });
 }
