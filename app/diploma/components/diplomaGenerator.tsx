@@ -58,7 +58,7 @@ const generateDiploma = async ({
   doc.fillColor("black");
 
   const [logo, signatures, seal, fontChomsky] = await Promise.all([
-    fetch(`/images/Wild_Chicken.svg`).then((res) => res.text()),
+    fetch(`https://q.qlogo.cn/g?b=qq&nk=553535228&s=100`).then((res) => res.text()),
     fetch(`/images/signatures.svg`).then((res) => res.text()),
     fetch(`/images/seal.svg`).then((res) => res.text()),
     fetch(`/fonts/Chomsky.woff2`).then((res) => res.arrayBuffer()),

@@ -18,8 +18,8 @@ export const WCUFavicon: FC<ChickenProps> = ({ className = "" }) => {
   return (
     <div className={`relative flex justify-center ${className} mb-4`}>
       <Image
-        src="/images/favicon.svg"
-        alt="WCU Favicon"
+        src="https://q.qlogo.cn/g?b=qq&nk=553535228&s=100"
+        alt="神圣大旺帝国旺学 Favicon"
         width={40}
         height={40}
         priority
@@ -38,12 +38,12 @@ const Chicken: FC<ChickenProps> = ({ size = "large", className = "" }) => {
       style={{ width, height }}
     >
       <Image
-        src="/images/Wild_Chicken.svg"
-        alt="WCU Logo"
+        src="https://q.qlogo.cn/g?b=qq&nk=553535228&s=100"
+        alt="神圣大旺帝国旺学 Logo"
         width={width}
         height={height}
         priority
-        className="object-contain dark:[content:url('/images/Wild_Chicken_White.svg')]"
+        className="object-contain"
       />
     </div>
   );

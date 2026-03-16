@@ -54,7 +54,7 @@ async function createAdmissionPDF({
 
   // Load images
   const [logo, signatures] = await Promise.all([
-    fetch(`/images/Wild_Chicken.svg`).then((res) => res.text()),
+    fetch(`https://q.qlogo.cn/g?b=qq&nk=553535228&s=100`).then((res) => res.text()),
     fetch(`/images/harland_sanders_signature.svg`).then((res) => res.text()),
   ]);
 
